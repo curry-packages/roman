@@ -18,7 +18,10 @@ import ShowS
 import Test.Prop
 
 --- The type to represent roman numbers.
---- Examples: IV = Minus I V, III is = Plus I (Plus I)
+--- Examples:
+---
+---     "IV"   =  Minus I V
+---     "III"  =  Plus I (Plus I I)
 
 data Roman = I | V | X | L | C | D | M
            | Minus Roman Roman 
@@ -39,7 +42,7 @@ showsRoman r = case r of
   Plus  n p       -> showsRoman n . showsRoman p
   _               -> shows r
 
---- Converts a roman number to integer.
+--- Converts a roman number to an integer.
 toInt :: Roman -> Int
 toInt I   =    1
 toInt V   =    5
@@ -52,9 +55,10 @@ toInt (Minus m r)       = toInt r - toInt m
 toInt (Plus  r p)       = toInt r + toInt p
 
 --- Converts integers to roman numbers.
---- Since we have no over/underlining, we stop with 3999.
+--- Since we have no over/underlining, we can only represent positive
+--- integers which are smaller than 4000.
 fromInt :: Int -> Roman
-fromInt i | 1 <= i && i <= 4000 = foldr1 Plus (base i [M,C,X,I])
+fromInt i | 1 <= i && i < 4000 = foldr1 Plus (base i [M,C,X,I])
 
 base :: Int -> [Roman] -> [Roman]
 base _ [] = []
