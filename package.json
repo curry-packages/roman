@@ -1,6 +1,6 @@
 {
     "name": "roman",
-    "version": "0.0.2",
+    "version": "2.0.0",
     "author": "Michael Hanus <mh@informatik.uni-kiel.de>",
     "synopsis": "Library for roman numbers",
     "category": [ "Data" ],
