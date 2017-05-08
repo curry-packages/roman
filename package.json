@@ -9,7 +9,9 @@
     "exportedModules": [ "Roman" ],
     "description": "This library provides conversion operations from integers to roman numbers and back.",
     "compilerCompatibility": {
-        "pakcs": ">= 2.0.0"
+        "pakcs": ">= 2.0.0",
+        "kics2": ">= 2.0.0"
+
     },
     "source": {
         "git": "https://git.ps.informatik.uni-kiel.de/curry-packages/roman.git",
