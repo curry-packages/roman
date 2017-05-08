@@ -14,7 +14,6 @@
 module Roman (Roman(..), showRoman, showsRoman, toInt, fromInt, regular)
  where
 
-import ShowS
 import Test.Prop
 
 --- The type to represent roman numbers.
@@ -26,7 +25,8 @@ import Test.Prop
 data Roman = I | V | X | L | C | D | M
            | Minus Roman Roman 
            | Plus  Roman Roman
-
+ deriving (Eq,Ord,Show)
+ 
 --- Is a given roman number well formed?
 regular :: Roman -> Bool
 regular r = fromInt (toInt r) == r

@@ -1,6 +1,6 @@
 {
     "name": "roman",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "Michael Hanus <mh@informatik.uni-kiel.de>",
     "synopsis": "Library for roman numbers",
     "category": [ "Data" ],
@@ -8,6 +8,9 @@
     },
     "exportedModules": [ "Roman" ],
     "description": "This library provides conversion operations from integers to roman numbers and back.",
+    "compilerCompatibility": {
+        "pakcs": ">= 2.0.0"
+    },
     "source": {
         "git": "https://git.ps.informatik.uni-kiel.de/curry-packages/roman.git",
         "tag": "$version"
