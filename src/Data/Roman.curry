@@ -6,12 +6,12 @@
 --- to show roman numbers as strings.
 --- 
 --- @author Bernd Brassel, Michael Hanus
---- @version 0.0.1
 ------------------------------------------------------------------------------
 
 {-# OPTIONS_CYMAKE -Wno-incomplete-patterns #-}
 
-module Roman (Roman(..), showRoman, showsRoman, toInt, fromInt, regular)
+module Data.Roman
+  ( Roman(..), showRoman, showsRoman, toInt, fromInt, regular )
  where
 
 import Test.Prop
