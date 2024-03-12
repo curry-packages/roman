@@ -10,7 +10,7 @@
     "exportedModules": [ "Data.Roman" ],
     "description": "This library provides conversion operations from integers to roman numbers and back.",
     "source": {
-        "git": "https://git.ps.informatik.uni-kiel.de/curry-packages/roman.git",
+        "git": "https://github.com/curry-packages/roman.git",
         "tag": "$version"
     }
 }
