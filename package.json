@@ -4,6 +4,8 @@
     "author": "Michael Hanus <mh@informatik.uni-kiel.de>",
     "synopsis": "Library for roman numbers",
     "category": [ "Data" ],
+    "license": "BSD-3-Clause",
+    "licenseFile": "LICENSE",
     "dependencies": {
         "base": ">= 2.0.0"
     },

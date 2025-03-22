@@ -21,7 +21,6 @@ import Test.Prop
 ---
 ---     "IV"   =  Minus I V
 ---     "III"  =  Plus I (Plus I I)
-
 data Roman = I | V | X | L | C | D | M
            | Minus Roman Roman 
            | Plus  Roman Roman
